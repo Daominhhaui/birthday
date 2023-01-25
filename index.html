@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <title>Sinh nhật zui zẻ nha</title>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="right">
+            <img src="play.png" id="icon">
+        </div>
+        <audio id="MySong">
+            <source src="Nhac.mp3" type="audio/mp3">
+        </audio>
+        <script>
+            var MySong = document.getElementById("MySong");
+            var icon = document.getElementById("icon");
+            icon.onclick = function(){
+                if(MySong.paused){
+                    MySong.play();
+                    icon.src = "pause1.png";
+                }else{
+                    MySong.pause();
+                    icon.src = "play.png";
+                }
+            }
+            MySong.play();
+        </script>
+        <div class="image">
+           <img style="width:220px; height: 220;" src="https://file.vfo.vn/hinh/2014/4/hinh-sinh-nhat-dep-1.gif">
+        </div>
+        <div class="card">
+            <img src="https://scontent.fhph1-2.fna.fbcdn.net/v/t39.30808-6/279209792_3235827746738030_2563863438792007044_n.jpg?stp=dst-jpg_p960x960&_nc_cat=106&ccb=1-7&_nc_sid=19026a&_nc_ohc=Mks7N0TGh9oAX_2N08G&_nc_ht=scontent.fhph1-2.fna&oh=00_AfA-9fGEL_rTDMatNUrZD7QKiHHC90RbtbcV3X7uQ-sswg&oe=63D1E8A7">
+            <h4>Sinh Nhật Vui Vẻ Nhé Bạn Tao. Chúc mày tuổi mới luôn luôn vui tươi, cười nhiều hơn, cute hơn. À chịu khó đi chơi nhiều lên để nhanh kiếm được người yêu nha😆💘</h4>
+        </div>
+    </div>
+</body>
+</html>
